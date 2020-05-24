@@ -6,10 +6,11 @@ class Counter extends Component {
     tags: ["tag1", "tag2", "tag3"],
   };
 
-  constructor() {
-    super();
-    this.handleIncrement = this.handleIncrement.bind(this);
-  }
+  //   constructor() {
+  //     super();
+  //     this.handleIncrement = this.handleIncrement.bind(this);
+  //   }
+
   render() {
     return (
       <div>
@@ -24,9 +25,9 @@ class Counter extends Component {
     );
   }
 
-  handleIncrement() {
+  handleIncrement = () => {
     console.log("Increment Clicked", this);
-  }
+  };
 
   formatCount() {
     const { count } = this.state;
